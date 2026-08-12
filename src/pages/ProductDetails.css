@@ -1,0 +1,294 @@
+/* ==============================
+   PRODUCT DETAILS PAGE
+   ============================== */
+
+.details-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.details-card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* ==============================
+   PRODUCT IMAGE
+   ============================== */
+
+.details-image {
+  width: 100%;
+  height: 580px;
+
+  background: #f3f4f6;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 150px;
+  overflow: hidden;
+}
+
+/* ==============================
+   PRODUCT INFORMATION
+   ============================== */
+
+.details-info {
+  width: 100%;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   CATEGORY
+   ============================== */
+
+.details-category {
+  color: #2563eb;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ==============================
+   PRODUCT NAME
+   ============================== */
+
+.details-info .product-title {
+  width: 100%;
+  max-width: 500px;
+
+  margin: 10px 0 20px;
+
+  font-size: 42px !important;
+  line-height: 1.2 !important;
+
+  font-weight: 700 !important;
+
+  color: white !important;
+
+  text-align: center;
+
+  white-space: normal !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* ==============================
+   DESCRIPTION
+   ============================== */
+
+.details-description {
+  width: 100%;
+  max-width: 600px;
+
+  margin: 0 0 15px;
+
+  color: #777;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+/* ==============================
+   PRICE
+   ============================== */
+
+.details-price {
+  margin: 15px 0 10px;
+
+  color: white;
+
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* ==============================
+   STOCK
+   ============================== */
+
+.stock {
+  margin-bottom: 10px;
+
+  color: green;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+
+.details-actions {
+  display: flex;
+  gap: 15px;
+
+  margin: 20px 0 35px;
+}
+
+.details-actions button {
+  border: none;
+  border-radius: 8px;
+
+  padding: 16px 30px;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+/* Add Cart */
+
+.add-cart {
+  background: #2563eb;
+  color: white;
+}
+
+.add-cart:hover {
+  background: #1d4ed8;
+}
+
+/* Buy Now */
+
+.buy-now {
+  background: #111827;
+  color: white;
+}
+
+.buy-now:hover {
+  background: black;
+}
+
+/* ==============================
+   BACK BUTTON
+   ============================== */
+
+.back-products {
+  color: #c084fc;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  text-decoration: underline;
+}
+
+
+/* ==============================
+   TABLET
+   ============================== */
+
+@media (max-width: 900px) {
+
+  .details-page {
+    padding: 0 20px;
+  }
+
+  .details-card {
+    gap: 30px;
+  }
+
+  .details-image {
+    height: 450px;
+    font-size: 120px;
+  }
+
+  .details-info .product-title {
+    font-size: 36px !important;
+  }
+
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 700px) {
+
+  .details-page {
+    margin: 25px auto;
+    padding: 0 15px;
+  }
+
+  .details-card {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .details-image {
+    height: 300px;
+    font-size: 90px;
+  }
+
+  .details-info {
+    padding: 10px;
+  }
+
+  .details-info .product-title {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .details-description {
+    font-size: 15px;
+  }
+
+  .details-price {
+    font-size: 27px;
+  }
+
+  .details-actions {
+    width: 100%;
+
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .details-actions button {
+    width: 100%;
+  }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+   ============================== */
+
+@media (max-width: 400px) {
+
+  .details-info .product-title {
+    font-size: 28px !important;
+  }
+
+  .details-image {
+    height: 250px;
+    font-size: 75px;
+  }
+
+}

@@ -6,7 +6,7 @@ function Orders() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/orders")
+    fetch("https://smartcart-du6h.onrender.com/api/orders")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch orders");

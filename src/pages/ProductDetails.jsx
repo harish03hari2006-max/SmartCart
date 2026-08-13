@@ -9,7 +9,7 @@ function ProductDetails() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://smartcart-du6h.onrender.com/api/products")
       .then((response) => response.json())
       .then((data) => {
         const foundProduct = data.find(

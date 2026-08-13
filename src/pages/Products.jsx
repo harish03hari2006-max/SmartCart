@@ -10,7 +10,7 @@ function Products() {
 
   // Get products from MongoDB
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+   fetch("https://smartcart-du6h.onrender.com/api/products")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch products");
